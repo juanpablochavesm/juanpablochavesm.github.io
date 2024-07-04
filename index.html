@@ -31,13 +31,14 @@
         }
         .product-images {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: space-between; /* Distribuir las imágenes equitativamente */
+            flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
         }
         .product-images img {
-            max-width: 100%; /* Ajuste para mantener la proporción original */
-            height: auto;
+            max-width: calc(33% - 20px); /* Ajuste para que las imágenes ocupen alrededor de un tercio del contenedor con un margen */
             margin-bottom: 20px;
+            margin-right: 20px; /* Espacio entre las imágenes */
+            flex: 0 0 auto; /* Permitir que las imágenes mantengan su tamaño original */
         }
         .product-info {
             text-align: center;
@@ -91,6 +92,7 @@
             .product-images img {
                 max-width: 100%;
                 margin-bottom: 10px;
+                margin-right: 0; /* No hay margen a la derecha en pantallas móviles */
             }
             .price-ribbon {
                 bottom: 5px;
@@ -112,15 +114,15 @@
             </div>
             <div class="product-info">
                 <ul>
-                    <li>- Tamaños disponibles:
+                    <li>Tamaños disponibles:
                         <ul>
                             <li>Grande, 25x20 cm</li>
                             <li>Mediano, 20x15 cm</li>
                             <li>Chico, 15x10 cm</li>
                         </ul>
                     </li>
-                    <li>- Diseño personalizado incluido!</li>
-                    <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
+                    <li>Diseño personalizado incluido!</li>
+                    <li>Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
                 </ul>
             </div>
             <div class="price-ribbon">$50.00</div> <!-- Aquí está el elemento con la clase 'price-ribbon' -->
@@ -138,15 +140,15 @@
             </div>
             <div class="product-info">
                 <ul>
-                    <li>- Tamaños disponibles:
+                    <li>Tamaños disponibles:
                         <ul>
                             <li>Grande, 25x20 cm</li>
                             <li>Mediano, 20x15 cm</li>
                             <li>Chico, 15x10 cm</li>
                         </ul>
                     </li>
-                    <li>- Diseño personalizado incluido!</li>
-                    <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
+                    <li>Diseño personalizado incluido!</li>
+                    <li>Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
                 </ul>
             </div>
             <div class="price-ribbon">$75.00</div> <!-- Aquí está el elemento con la clase 'price-ribbon' -->
@@ -164,15 +166,15 @@
             </div>
             <div class="product-info">
                 <ul>
-                    <li>- Tamaños disponibles:
+                    <li>Tamaños disponibles:
                         <ul>
                             <li>Grande, 25x20 cm</li>
                             <li>Mediano, 20x15 cm</li>
                             <li>Chico, 15x10 cm</li>
                         </ul>
                     </li>
-                    <li>- Diseño personalizado incluido!</li>
-                    <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
+                    <li>Diseño personalizado incluido!</li>
+                    <li>Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
                 </ul>
             </div>
             <div class="price-ribbon">$100.00</div> <!-- Aquí está el elemento con la clase 'price-ribbon' -->
