@@ -3,31 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Pablo Chaves</title>
+    <title>Catálogo de Productos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
         }
         .container {
-            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
-        h1 {
-            font-size: 3rem;
+        .product-section {
+            margin-bottom: 40px;
+        }
+        .product-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-images img {
+            max-width: 30%;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>¡Hola! Soy Juan Pablo Chaves.</p>
+        <div class="product-section" id="producto1">
+            <h2>Producto 1</h2>
+            <div class="product-images">
+                <img src="Cuadro_normal/foto_1.png" alt="Producto 1 Imagen 1">
+                <img src="Cuadro_normal/foto_2.png" alt="Producto 1 Imagen 2">
+                <img src="Cuadro_normal/foto_3.png" alt="Producto 1 Imagen 3">
+            </div>
+        </div>
+        <div class="product-section" id="producto2">
+            <h2>Producto 2</h2>
+            <div class="product-images">
+                <img src="Informacion/Foto_1.jpg" alt="Producto 2 Imagen 1">
+                <img src="Informacion/Foto_2.jpg" alt="Producto 2 Imagen 2">
+                <img src="Informacion/Foto_3.jpg" alt="Producto 2 Imagen 3">
+            </div>
+        </div>
+        <div class="product-section" id="producto3">
+            <h2>Producto 3</h2>
+            <div class="product-images">
+                <img src="Mapa_estelar/Foto_1.jpg" alt="Producto 3 Imagen 1">
+                <img src="Mapa_estelar/Foto_2.jpg" alt="Producto 3 Imagen 2">
+                <img src="Mapa_estelar/Foto_3.jpg" alt="Producto 3 Imagen 3">
+            </div>
+        </div>
     </div>
 </body>
 </html>
