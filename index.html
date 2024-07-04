@@ -45,9 +45,13 @@
             font-size: 1.1em;
         }
         .product-info ul {
-            list-style-type: none; /* Elimina los bullets predeterminados */
-            padding: 0;
-            text-align: left; /* Alineación del texto a la izquierda */
+            list-style-type: disc; /* Cambia los guiones por bullets */
+            padding: 0 20px; /* Añade un padding a las listas */
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+        .product-info ul ul {
+            list-style-type: circle; /* Cambia a círculos para los subelementos */
+            padding-left: 20px; /* Ajuste del padding para los subelementos */
         }
         .product-info li {
             margin-bottom: 5px; /* Espacio entre cada ítem de la lista */
@@ -100,80 +104,221 @@
     <div class="container">
         <div class="product-section" id="producto1">
             <h2>Producto 1</h2>
-            <p class="product-description">Esta es una breve descripción del Producto 1. Es un producto de alta calidad y muy popular entre nuestros clientes.</p>
+            <p class="product-description"><!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Catálogo de Productos</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background: linear-gradient(to bottom right, #FFDAB9, #FFFFFF); /* Fondo con degradado más claro */
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .container {
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
+                    .product-section {
+                        margin-bottom: 40px;
+                        position: relative; /* Necesario para posicionar la cinta del precio */
+                    }
+                    .product-section h2 {
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+                    .product-description {
+                        text-align: center;
+                        margin-bottom: 20px;
+                        font-size: 1.1em;
+                    }
+                    .product-images {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                    }
+                    .product-images img {
+                        max-width: 100%; /* Ajuste para mantener la proporción original */
+                        height: auto;
+                        margin-bottom: 20px;
+                    }
+                    .product-info {
+                        text-align: center;
+                        margin-bottom: 20px;
+                        font-size: 1.1em;
+                    }
+                    .product-info ul {
+                        list-style-type: none; /* Elimina los bullets predeterminados */
+                        padding: 0;
+                        text-align: left; /* Alineación del texto a la izquierda */
+                    }
+                    .product-info li {
+                        margin-bottom: 5px; /* Espacio entre cada ítem de la lista */
+                    }
+                    .price-ribbon {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px; /* Ajuste al margen derecho */
+                        background-color: #007BFF; /* Fondo azul para la cinta */
+                        color: #fff;
+                        padding: 10px 40px; /* Ajuste del padding para hacer la cinta más larga */
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        border-radius: 20px; /* Redondear más los bordes */
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        border: 2px solid #fff; /* Borde blanco */
+                    }
+                    .product-link {
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .product-link a {
+                        color: #007BFF;
+                        text-decoration: none;
+                        font-size: 1.1em;
+                    }
+                    .product-link a:hover {
+                        text-decoration: underline;
+                    }
+
+                    /* Media query para pantallas móviles */
+                    @media (max-width: 768px) {
+                        .container {
+                            width: 95%;
+                            padding: 10px;
+                        }
+                        .product-images img {
+                            max-width: 100%;
+                            margin-bottom: 10px;
+                        }
+                        .price-ribbon {
+                            bottom: 5px;
+                            padding: 5px 20px; /* Ajuste del padding para móvil */
+                            font-size: 1em;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <div class="product-section" id="producto1">
+                        <h2>Producto 1</h2>
+                        <p class="product-description">Regalos para hacer infinitos los momentos únicos. Pensalo como quieras, nosotros lo diseñamos para vos!</p>
+                        <div class="product-images">
+                            <img src="Cuadro_normal/foto_1.png" alt="Producto 1 Imagen 1">
+                            <img src="Cuadro_normal/foto_2.png" alt="Producto 1 Imagen 2">
+                            <img src="Cuadro_normal/foto_3.png" alt="Producto 1 Imagen 3">
+                        </div>
+                        <div class="product-info">
+                            <ul>
+                                <li>- Tamaños disponibles:
+                                    <ul>
+                                        <li>Grande, 25x20 cm</li>
+                                        <li>Mediano, 20x15 cm</li>
+                                        <li>Chico, 15x10 cm</li>
+                                    </ul>
+                                </li>
+                                <li>- Diseño personalizado incluido!</li>
+                                <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
+                            </ul>
+                        </div>
+                        <div class="price-ribbon">$50.00</div>
+                        <div class="product-link">
+                            <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo acá!</a>
+                        </div>
+                    </div>
+                    <div class="product-section" id="producto2">
+                        <h2>Producto 2</h2>
+                        <p class="product-description">Mapas únicos que nos conectan con el cielo el día de ese momento especial.</p>
+                        <div class="product-images">
+                            <img src="Informacion/Foto_1.jpg" alt="Producto 2 Imagen 1">
+                            <img src="Informacion/Foto_2.jpg" alt="Producto 2 Imagen 2">
+                            <img src="Informacion/Foto_3.jpg" alt="Producto 2 Imagen 3">
+                        </div>
+                        <div class="product-info">
+                            <ul>
+                                <li>- Tamaños disponibles:
+                                    <ul>
+                                        <li>Grande, 25x20 cm</li>
+                                        <li>Mediano, 20x15 cm</li>
+                                        <li>Chico, 15x10 cm</li>
+                                    </ul>
+                                </li>
+                                <li>- Diseño personalizado incluido!</li>
+                                <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
+                            </ul>
+                        </div>
+                        <div class="price-ribbon">$75.00</div>
+                        <div class="product-link">
+                            <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo acá!</a>
+                        </div>
+                    </div>
+                    <div class="product-section" id="producto3">
+                        <h2>Producto 3</h2>
+                        <p class="product-description"Creá tu propio espacio, desplegá tu imaginación!</p>
+                        <div class="product-images">
+                            <img src="Mapa_estelar/Foto_1.jpg" alt="Producto 3 Imagen 1">
+                            <img src="Mapa_estelar/Foto_2.jpg" alt="Producto 3 Imagen 2">
+                            <img src="Mapa_estelar/Foto_3.jpg" alt="Producto 3 Imagen 3">
+                        </div>
+                        <div class="product-info">
+                            <ul>
+                                <li>- Tamaños disponibles:
+                                    <ul>
+                                        <li>Grande, 25x20 cm</li>
+                                        <li>Mediano, 20x15 cm</li>
+                                        <li>Chico, 15x10 cm</li>
+                                    </ul>
+                                </li>
+                                <li>- Diseño personalizado incluido!</li>
+                                <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
+                            </ul>
+                        </div>
+                        <div class="price-ribbon">$100.00</div>
+                        <div class="product-link">
+                            <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo acá!</a>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            </html></p>
             <div class="product-images">
                 <img src="Cuadro_normal/foto_1.png" alt="Producto 1 Imagen 1">
                 <img src="Cuadro_normal/foto_2.png" alt="Producto 1 Imagen 2">
                 <img src="Cuadro_normal/foto_3.png" alt="Producto 1 Imagen 3">
             </div>
-            <div class="product-info">
-                <ul>
-                    <li>- Tamaños disponibles:
-                        <ul>
-                            <li>Grande, 25x20 cm</li>
-                            <li>Mediano, 20x15 cm</li>
-                            <li>Chico, 15x10 cm</li>
-                        </ul>
-                    </li>
-                    <li>- Diseño personalizado incluido!</li>
-                    <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
-                </ul>
-            </div>
             <div class="price-ribbon">$50.00</div>
             <div class="product-link">
-                <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo acá!</a>
+                <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo aquí!</a>
             </div>
         </div>
         <div class="product-section" id="producto2">
             <h2>Producto 2</h2>
-            <p class="product-description">Esta es una breve descripción del Producto 2. Perfecto para quienes buscan calidad y estilo.</p>
+            <p class="product-description">Mapas únicos que nos conectan con el cielo el día de ese momento especial.</p>
             <div class="product-images">
                 <img src="Informacion/Foto_1.jpg" alt="Producto 2 Imagen 1">
                 <img src="Informacion/Foto_2.jpg" alt="Producto 2 Imagen 2">
                 <img src="Informacion/Foto_3.jpg" alt="Producto 2 Imagen 3">
             </div>
-            <div class="product-info">
-                <ul>
-                    <li>- Tamaños disponibles:
-                        <ul>
-                            <li>Grande, 25x20 cm</li>
-                            <li>Mediano, 20x15 cm</li>
-                            <li>Chico, 15x10 cm</li>
-                        </ul>
-                    </li>
-                    <li>- Diseño personalizado incluido!</li>
-                    <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
-                </ul>
-            </div>
             <div class="price-ribbon">$75.00</div>
             <div class="product-link">
-                <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo acá!</a>
+                <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo aquí!</a>
             </div>
         </div>
         <div class="product-section" id="producto3">
             <h2>Producto 3</h2>
-            <p class="product-description">Esta es una breve descripción del Producto 3. Ideal para regalar o para uso personal.</p>
+            <p class="product-description">Creá tu propio espacio, desplegá tu imaginación!</p>
             <div class="product-images">
                 <img src="Mapa_estelar/Foto_1.jpg" alt="Producto 3 Imagen 1">
                 <img src="Mapa_estelar/Foto_2.jpg" alt="Producto 3 Imagen 2">
                 <img src="Mapa_estelar/Foto_3.jpg" alt="Producto 3 Imagen 3">
             </div>
-            <div class="product-info">
-                <ul>
-                    <li>- Tamaños disponibles:
-                        <ul>
-                            <li>Grande, 25x20 cm</li>
-                            <li>Mediano, 20x15 cm</li>
-                            <li>Chico, 15x10 cm</li>
-                        </ul>
-                    </li>
-                    <li>- Diseño personalizado incluido!</li>
-                    <li>- Retiro en San Andrés o envío por Andreani según precio en Andreani Web</li>
-                </ul>
-            </div>
             <div class="price-ribbon">$100.00</div>
             <div class="product-link">
-                <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo acá!</a>
+                <a href="https://www.instagram.com/vrs.creaciones/" target="_blank">¡Pedilo aquí!</a>
             </div>
         </div>
     </div>
